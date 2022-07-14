@@ -6,4 +6,4 @@ This repository will document my solutions as I work through these LEET 75 code 
 
 ## Contents
 
-1. [Valid Anagram](leet_75/valid_anagram.md)
+1. [Valid Anagram](valid_anagram.md)
