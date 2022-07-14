@@ -63,18 +63,44 @@ Then we just need to compare the two hash tables to make sure that they have the
 
 If all the pairs match, we have an anagram and the algorithm returns True.
 
+### Putting it all together
+
+C**ompleted Algorithm:**
+
+```python
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        
+        char_in_s, char_in_t = {}, {}
+        
+        for i in range(len(s)):
+            char_in_s[s[i]] = 1 + char_in_s.get(s[i], 0)
+            char_in_t[t[i]] = 1 + char_in_t.get(t[i], 0)
+        
+        for char in char_in_s:
+            if char_in_s[char] != char_in_t.get(char, 0):
+                return False
+        return True
+```
+
 Alternatively, in Python we could use the built-in Sorted or Counter methods as follows:
 
 **Counter:**
 
 ```python
-return Counter(s) == Counter(t)
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+				return Counter(s) == Counter(t)
 ```
 
 **Sorted:**
 
 ```python
-return Sorted(s) == Sorted(t)
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+				return Sorted(s) == Sorted(t)
 ```
 
 Counter is slightly more efficient than Sorted, since sorted has to arrange the characters in ascending order.
@@ -86,3 +112,7 @@ The time complexity will be O(n) since we doing each operation for each characte
 It is more accurate to say O(s+t).
 
 Similarly, the algorithm uses additional memory, but it does not grow exponentially.  It is one key/value pair for each character being added to the 2  hash tables. Therefore O(s+t)
+
+Using the ***Counter*** method would be the same since this method creates a hash table in the background.
+
+***Sorting*** methods have a time complexity of O(NlogN).
