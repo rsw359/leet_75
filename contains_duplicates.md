@@ -42,4 +42,28 @@ class Solution:
 
 The run time for this is 633 ms and used 26MB of memory.
 
+## Using A Set
 
+ A faster and (*slightly*) more efficient way to do this is to use a set and check whether the number in the list exists in the set. If it does, return True immediately. The run time is faster, although the time and space complexity remain O(n), where n is the size of the original data set.
+
+```python
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+ # create set
+    nums_set = set()
+ #check if num is in the set, and if so, return True. Otherwise, add it to the 
+ #set and loop again 
+    for num in nums:
+     if num in num_set:
+       return True
+     num_set.add(num)
+       return False
+```
+
+The run time for this solution was 462 ms and used 26 MB of memory.
+
+## Brute Force
+
+The brute force method would be to use a nested loop. We would have to loop through the list, then loop again and check if the subsequent numbers in the list were identical to the initial number from the first loop.
+
+The time complexity would be O(n^2), but we wouldn't need to allocate any additional memory, resulting in a space complexity of O(1).
