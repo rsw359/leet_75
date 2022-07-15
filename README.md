@@ -7,3 +7,4 @@ This repository will document my solutions as I work through these LEET 75 code 
 ## Contents
 
 1. [Valid Anagram](valid_anagram.md)
+2. [Contains Duplicates](contains_duplicates.md)
