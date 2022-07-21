@@ -6,7 +6,7 @@ Given an array of strings `strs`, group **the anagrams** together. You can re
 
 **Example 1:**
 
-```
+```python
 Input: strs = ["eat","tea","tan","ate","nat","bat"]
 Output: [["bat"],["nat","tan"],["ate","eat","tea"]]
 ```
@@ -38,3 +38,5 @@ Next, the strings with the same counts for each character are grouped together a
 Then, the values from the result dictionary are returned.
 
 The time complexity for this solution is O(l*n) where l is the number of strings in the dataset, and n is the number of characters in the string.
+
+* a sort solution will be added later
