@@ -9,3 +9,4 @@ This repository will document my solutions as I work through these LEET 75 code 
 1. [Valid Anagram](valid_anagram.md)
 2. [Contains Duplicates](contains_duplicates.md)
 3. [Two Sum](two_sum.md)
+4. [Grouped Anagrams](grouped_anagrams.md)
