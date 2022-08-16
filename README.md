@@ -10,3 +10,4 @@ This repository will document my solutions as I work through these LEET 75 code 
 2. [Contains Duplicates](contains_duplicates.md)
 3. [Two Sum](two_sum.md)
 4. [Grouped Anagrams](grouped_anagrams.md)
+5. [Top K Frequent Elements](top_k_frequent_elements.md)
