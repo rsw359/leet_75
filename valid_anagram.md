@@ -100,10 +100,11 @@ class Solution:
 ```python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-	return Sorted(s) == Sorted(t)
+	return sorted(s) == sorted(t)
 ```
 
 Counter is slightly more efficient than Sorted, since sorted has to arrange the characters in ascending order.
+(Counter must be imported from the Collections module)
 
 ### Space and Time Complexity
 
