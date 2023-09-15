@@ -92,7 +92,7 @@ Alternatively, in Python we could use the built-in Sorted or Counter methods as 
 ```python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-				return Counter(s) == Counter(t)
+	return Counter(s) == Counter(t)
 ```
 
 **Sorted:**
@@ -100,7 +100,7 @@ class Solution:
 ```python
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
-				return Sorted(s) == Sorted(t)
+	return Sorted(s) == Sorted(t)
 ```
 
 Counter is slightly more efficient than Sorted, since sorted has to arrange the characters in ascending order.
