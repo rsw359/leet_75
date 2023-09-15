@@ -23,7 +23,7 @@ The brute force way to solve this problem is to use a nested loop, the outer loo
 
 ## Hash map
 
-Alternatively, a hash map can be used to reduce the time complexity to O(n), but since we have to use additional memory for the hash map, space complexity become O(n), instead of O(1) in the brute force solution.
+Alternatively, a hash map can be used to reduce the time complexity to O(n). but it's a trade-off since we have to use additional memory for the hash map, space complexity becomes O(n), instead of O(1) in the brute force solution. 
 
 First, define an empty hash map.
 
