@@ -24,7 +24,7 @@ if len(s) != len(t):
 
 If they aren’t the same length, they cannot be anagrams of each other. 
 
-From there, we know that an anagram will contain the same number of occurrences of each character. The best way to do this is to use a hash table, which will contain key/value pairs for the number of occurrences of each letter.
+If both inputs (t and s) are anagrams of each other, they will contain the same number of occurrences of each character. This can be determined using a hash table, which will contain key/value pairs for the number of occurrences of each letter.
 
 **Create the Hash Tables:**
 
@@ -32,12 +32,12 @@ From there, we know that an anagram will contain the same number of occurrences 
 char_in_s, char_in_t = {}, {}
 ```
 
-From there, we need to loop through the strings and get the count for each. We will add 1 to the count each time we encounter the same letter.
+From there, we need to loop through the input strings (t and s) and get the count for each. We will add 1 to the count each time we encounter the same letter.
 
 **Loop and Keep Count:**
 
 ```python
-#Since the hash table is empty at first, we need to use Pythons get method 
+#Since the hash table is empty at first, we need to use Pythons 'get' method 
 #to get the keys(letters) since they dont exist in the hash tables yet.
 #initially, we only need to check the first string
 
@@ -51,7 +51,7 @@ Then we just need to compare the two hash tables to make sure that they have the
 **Comparison:**
 
 ```python
-#since we just used the first string, the second hash table hasn't been 
+#since we just used the first string, the second hash table hasn't been filled yet
 # we have to use the get method to avoid a key error.
 # we iterate through the hash tables and compare the pairs, and if any dont match, 
 # we return False
